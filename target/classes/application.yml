@@ -1,0 +1,16 @@
+server:
+  port: 9002
+
+mybatis-plus:
+  type-enums-package: com.wubo.blog.pojo
+  mapper-locations: classpath*:/com/wubo/blog/dao/mapper/*.xml
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/blog?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    port: 6379
+    host: 49.232.158.192
+    database: 0
